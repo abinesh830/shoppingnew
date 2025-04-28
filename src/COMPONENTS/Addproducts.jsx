@@ -35,7 +35,7 @@ const Addproducts = () => {
         formData.append('productdescription', productadd.productdescription);
         formData.append('productimage', productadd.productimage);
       
-        axios.post("http://localhost:5000/productadd", formData, {
+        axios.post("https://shopbuy12.netlify.app/productadd", formData, {
           headers: {
             'Content-Type': 'multipart/form-data',
           },
