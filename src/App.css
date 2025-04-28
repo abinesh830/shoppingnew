@@ -1,38 +1,83 @@
-.App {
+
+#home{
+  width: 100vw;
+  height: 100%;
+  background: #12aae6;
+background: linear-gradient(90deg, rgb(8, 20, 25) 0%, rgb(33, 221, 149) 100%, rgb(198, 9, 9) 0%, rgba(33, 217, 109, 1) 100%, rgba(131, 205, 118, 1) 100%, rgba(80, 140, 34, 1) 100%, rgba(237, 221, 83, 1) 100%);
+
+
+}
+#log{
+  width: 100vw;
+  height: 100vh;
+  background: #12aae6;
+background: linear-gradient(90deg, rgb(8, 20, 25) 0%, rgb(33, 221, 149) 100%, rgb(198, 9, 9) 0%, rgba(33, 217, 109, 1) 100%, rgba(131, 205, 118, 1) 100%, rgba(80, 140, 34, 1) 100%, rgba(237, 221, 83, 1) 100%);
+
+
+
+}
+#tog{
+  position: absolute;
+  z-index: 3;
+  height: 100vh;
+  top: 1px;
+  width: 50%;
+  margin-left: -500px;
+  
+}
+#btn-1{
+  position: absolute;
+  bottom: 0%;
+}
+#sign{
+  width: 100vw;
+  height: 100vh;
+  background: #12aae6;
+background: linear-gradient(90deg, rgb(8, 20, 25) 0%, rgb(33, 221, 149) 100%, rgb(198, 9, 9) 0%, rgba(33, 217, 109, 1) 100%, rgba(131, 205, 118, 1) 100%, rgba(80, 140, 34, 1) 100%, rgba(237, 221, 83, 1) 100%);
+
+
+}
+#pointer:hover{
+  cursor: pointer;
+}
+#log-1{
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  overflow: hidden;
+}
+#animi{
+animation: ani 0.5s infinite;
+color:white;
+}
+#mobile{
+  box-shadow: rgba(22, 22, 22, 0.3) 0px 19px 38px, rgba(7, 7, 7, 0.22) 0px 15px 12px;
+  padding-top: 1px;
+  position: sticky;
+  top: 0%;
+  z-index: 3;
+}
+#bar:hover{
+  cursor: pointer;
+
+}
+@keyframes ani {
+  to{
+  text-shadow: 0 0 5px red,0 0 30px red,0 0 50px red,0 0 70px red,0 0 100px red;
+   
+
+
+  }
+  
+}
+#profile{
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#nav{
+  box-shadow: rgba(4, 4, 4, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  z-index: 3;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#otp{
+  display: none;
 }
