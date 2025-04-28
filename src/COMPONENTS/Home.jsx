@@ -21,7 +21,7 @@ const Home = () => {
 
   useEffect(()=>{
     const getdata= async ()=>{
-     await axios.get("http://localhost:5000/getproduct")
+     await axios.get("https://shopbuy12.netlify.app/getproduct")
       .then((response)=>{
         setproduct(response.data.product)
         console.log(response.data.product)
