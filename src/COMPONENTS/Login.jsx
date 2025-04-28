@@ -25,7 +25,7 @@ const Login = () => {
   function log(event){
     event.preventDefault()
 
-    axios.post('http://localhost:5000/login',userdata)
+    axios.post('https://shopbuy12.netlify.app/login',userdata)
     .then((response)=>{
       const statuscode=response.status;
 
