@@ -31,7 +31,7 @@ const Signin = () => {
 
       function createsignin(event){
         event.preventDefault();
-        axios.post('http://localhost:5000/userdata',userdata)
+        axios.post('https://shopbuy12.netlify.app//userdata',userdata)
         .then((response)=>{
             alert(response.data.message)
             const statuscode=response.status;
@@ -55,7 +55,7 @@ const Signin = () => {
 
 const reotp=(event)=>{
  event.preventDefault();
- axios.post('http://localhost:5000/reotp',userdata)
+ axios.post('https://shopbuy12.netlify.app/reotp',userdata)
  .then((response)=>{
  alert(response.data.message)
 })
@@ -74,7 +74,7 @@ const accountcreate=(event)=>{
 
     event.preventDefault();
     let requireddata={...userdata,otp}
-    axios.post('http://localhost:5000/createaccount',requireddata)
+    axios.post('https://shopbuy12.netlify.app/createaccount',requireddata)
     .then((response)=>{
         let statuscode=response.status
         if(statuscode===201){
